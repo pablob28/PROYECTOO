@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización de Envíos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Formulario de Cotización de Envío</h2>
+        <form id="cotizacionForm">
+            <label for="origen">Origen:</label>
+            <input type="text" id="origen" name="origen" required>
+
+            <label for="direccion_origen">Dirección de Recogida:</label>
+            <input type="text" id="direccion_origen" name="direccion_origen" required>
+
+            <label for="destino">Destino:</label>
+            <input type="text" id="destino" name="destino" required>
+
+            <label for="direccion_destino">Dirección de Entrega:</label>
+            <input type="text" id="direccion_destino" name="direccion_destino" required>
+
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" name="peso" required>
+
+            <label for="dimensiones">Dimensiones (cm):</label>
+            <input type="text" id="dimensiones" name="dimensiones" placeholder="Ej: 30x20x15">
+
+            <label for="valor_declarado">Valor Declarado ($):</label>
+            <input type="number" id="valor_declarado" name="valor_declarado">
+
+            <label for="tipo_envio">Tipo de Envío:</label>
+            <select id="tipo_envio" name="tipo_envio">
+                <option value="normal">Normal</option>
+                <option value="express">Express</option>
+            </select>
+
+            <label for="pago">Método de Pago:</label>
+            <select id="pago" name="pago">
+                <option value="efectivo">Efectivo</option>
+                <option value="tarjeta">Tarjeta</option>
+            </select>
+
+            <label for="notas">Notas Adicionales:</label>
+            <textarea id="notas" name="notas" rows="4"></textarea>
+
+            <button type="submit">Cotizar</button>
+        </form>
+
+        <div id="resultados"></div>
+    </div>
+
+    <script src="cotizacion.js"></script>
+</body>
+</html>
