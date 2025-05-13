@@ -1,10 +1,10 @@
 {
-  "name": "Software logistica",
+  "name": "software-logistica",
   "version": "1.0.0",
-  "description": "Software logistica compara precios/rapidez de diferentes transportadoras",
+  "description": "Software de logística que compara precios y rapidez de diferentes transportadoras",
   "main": "index.js",
   "scripts": {
-    "start": "node script.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "express": "^4.18.2",
