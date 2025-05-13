@@ -1,0 +1,15 @@
+{
+  "name": "Software logística",
+  "version": "1.0.0",
+  "description": "Software logística compara precios/rapidez de diferentes transportadoras",
+  "main": "index.js",
+  "scripts": {
+    "start": "node script.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "axios": "^1.5.0",
+    "dotenv": "^16.0.3"
+  }
+}
